@@ -25,6 +25,53 @@
                               </div>
                           </div>
                       </div>
+                      <div class="row">
+                          <div class="col-sm-12">
+                              <section class="panel panel-default">
+                                  <div class="panel-body">
+                                      <div class="row">
+                                          <div class="col-sm-12 col-md-12 ">
+                                              <fieldset class="scheduler-border">
+                                                  <legend class="scheduler-border">Test</legend>
+                                                  <table class="table table-responsive table-bordered">
+                                                      <thead>
+                                                          <tr>
+                                                              <th class="text-center">Data 1</th>
+                                                              <th class="text-center">Data 2</th>
+                                                              <th class="text-center">Data 3</th>
+                                                              <th class="text-center">Data 4</th>
+                                                              <th class="text-center">Total</th>
+                                                              <th class="text-center">Loss data 1</th>
+                                                              <th class="text-center">Loss data 2</th>
+                                                              <th class="text-center">Loss data 3</th>
+                                                              <th class="text-center">Loss data 4</th>
+                                                              <th class="text-center">Total Losss</th>
+                                                          </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                        {{#each loooping}} {{#let largeCount=@index}}
+                                                           <tr>
+                                                               {{#each aarHelper.data}}
+                                                               <td>
+                                                                   <center>{{helper aarHelper.data @index largeCount}}</center>
+                                                               </td>
+                                                               {{/each}}
+                                                               {{#each aarHelper.dataloss}}
+                                                               <td>
+                                                                   <center>{{helper aarHelper.dataloss @index largeCount}}</center>
+                                                               </td>
+                                                               {{/each}}
+                                                           </tr>
+                                                           {{/let}} {{/each}}
+                                                      </tbody>
+                                                  </table>
+                                              </fieldset>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </section>
+                          </div>
+                      </div>
                   </div>
               </div>
           </div>
