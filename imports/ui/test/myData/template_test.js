@@ -34,38 +34,38 @@ Template.templateTest.events({
 });
 
 Template.templateTest.helpers({
-    aarHelper() {
-        var data = [
-            [1, 2, 3, 4, 5, 15],
-            [1, 2, 3, 4, 5, 15],
-            [1, 2, 3, 4, 5, 15],
-            [1, 2, 3, 4, 5, 15],
-            [4, 8, 12, 16, 20, 60]
-        ];
-        var dataloss = [
-            [6, 7, 8, 9, 10, 40],
-            [6, 7, 8, 9, 10, 40],
-            [6, 7, 8, 9, 10, 40],
-            [6, 7, 8, 9, 10, 40],
-            [24, 28, 32, 36, 40, 160]
-        ];
-        var json = {
-            data: data,
-            dataloss: dataloss
-        };
-        return json;
-    },
-    loooping() {
-        var ary = [];
-        for (var i = 0; i < 6; i++) {
-            ary.push(i)
-        }
-        return ary;
-    },
-    helper(ary, index, val) {
-      console.log(ary);
-      console.log(index);
-      console.log(val);
-        return ary[index][val];
-    }
+    // aarHelper() {
+    //     var data = [
+    //         [1, 2, 3, 4, 5, 15],
+    //         [1, 2, 3, 4, 5, 15],
+    //         [1, 2, 3, 4, 5, 15],
+    //         [1, 2, 3, 4, 5, 15],
+    //         [4, 8, 12, 16, 20, 60]
+    //     ];
+    //     var dataloss = [
+    //         [6, 7, 8, 9, 10, 40],
+    //         [6, 7, 8, 9, 10, 40],
+    //         [6, 7, 8, 9, 10, 40],
+    //         [6, 7, 8, 9, 10, 40],
+    //         [24, 28, 32, 36, 40, 160]
+    //     ];
+    //     var json = {
+    //         data: data,
+    //         dataloss: dataloss
+    //     };
+    //     return json;
+    // },
+    // loooping() {
+    //     var ary = [];
+    //     for (var i = 0; i < 6; i++) {
+    //         ary.push(i)
+    //     }
+    //     return ary;
+    // },
+    // helper(ary, index, val) {
+    //   console.log(ary);
+    //   console.log(index);
+    //   console.log(val);
+    //     return ary[index][val];
+    // }
 });
